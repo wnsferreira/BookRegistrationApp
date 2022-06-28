@@ -31,19 +31,18 @@ class RegistrationBookFragment : Fragment() {
 
         bookViewModel = viewModelProvider.get(BookViewModel::class.java)
 
-        bookViewModel.quantidadeBook
+        bookViewModel.quantityBook
             .observe(viewLifecycleOwner
             ) {
                 textViewTotalBooks.text = it.toString()
             }
 
         btnRegistrationBook.setOnClickListener {
-            var nomeFilme = editTextNameBook.text.toString()
-            var anoLancamento = editTextYearBook.text.toString()
+            var nameBook = editTextNameBook.text.toString()
+            var yearRelease = editTextYearBook.text.toString()
 
-
-            if (!nomeFilme.isNullOrEmpty() && !anoLancamento.isNullOrEmpty()) {
-                bookViewModel.saveBook(nomeFilme, anoLancamento)
+            if (!nameBook.isNullOrEmpty() && !yearRelease.isNullOrEmpty()) {
+                bookViewModel.saveBook(nameBook, yearRelease)
 
                 Toast.makeText(
                     requireContext(),

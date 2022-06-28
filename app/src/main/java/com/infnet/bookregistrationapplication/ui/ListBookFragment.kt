@@ -22,10 +22,10 @@ class ListBookFragment : Fragment() {
     private lateinit var listBookViewModel: BookViewModel
     private lateinit var fullViewModel: FullViewModel
 
-    var quantidadeFilmes = MutableLiveData<Int>()
+    var quantityBooks = MutableLiveData<Int>()
 
     init {
-        quantidadeFilmes.value = 2
+        quantityBooks.value = 2
     }
 
     override fun onCreateView(
