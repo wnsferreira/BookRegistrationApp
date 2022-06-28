@@ -5,7 +5,7 @@
       <map>
         <entry key="..\:/Workspace developer/Kotlin/BookRegistrationApplication/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Workspace developer/Kotlin/BookRegistrationApplication/app/src/main/res/layout/fragment_list_book.xml" value="0.20416666666666666" />
-        <entry key="..\:/Workspace developer/Kotlin/BookRegistrationApplication/app/src/main/res/layout/fragment_registration_book.xml" value="0.19010416666666666" />
+        <entry key="..\:/Workspace developer/Kotlin/BookRegistrationApplication/app/src/main/res/layout/fragment_registration_book.xml" value="0.33" />
         <entry key="..\:/Workspace developer/Kotlin/BookRegistrationApplication/app/src/main/res/layout/fragment_show_book.xml" value="0.33" />
         <entry key="..\:/Workspace developer/Kotlin/BookRegistrationApplication/app/src/main/res/layout/list_book_recycler.xml" value="0.22" />
       </map>

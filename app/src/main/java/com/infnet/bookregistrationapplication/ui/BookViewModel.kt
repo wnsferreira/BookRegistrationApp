@@ -9,7 +9,7 @@ import com.infnet.bookregistrationapplication.model.Book
 class BookViewModel : ViewModel(){
     var quantidadeBook = MutableLiveData<Int>()
     init {
-        quantidadeBook.value = 2
+        quantidadeBook.value = 3
     }
 
     fun addBook(){
@@ -35,15 +35,12 @@ class BookViewModel : ViewModel(){
         getAll()
     }
 
-    fun getAll() {
-        _msg.value = "Consultando a base de dados."
+    private fun getAll() {
+        _msg.value = "Querying the database..."
         val appDatabase = AppDatabase.getInstance()
         _books.value = appDatabase.all()
 
-        if (true) {
-            _status.value = true
-            _msg.value = "Consulta ralizada com sucesso!"
-        }
+        _status.value = true
     }
 
     fun saveBook(

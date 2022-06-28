@@ -4,8 +4,9 @@ import com.infnet.bookregistrationapplication.model.Book
 
 class AppDatabase {
     private val books = mutableListOf(
-        Book("A divina comédia", "1321"),
-        Book("Romeu e Julieta", "1595")
+        Book("kotlin em ação", "2017"),
+        Book("Refatoração", "2020"),
+        Book("Código limpo", "2009")
     )
 
     fun all(): MutableList<Book> = books
@@ -14,12 +15,7 @@ class AppDatabase {
         books.add(book)
     }
 
-    fun delete(book: Book) {
-        books.remove(book)
-    }
-
     companion object {
-
         private var instance: AppDatabase? = null
 
         fun getInstance(): AppDatabase {

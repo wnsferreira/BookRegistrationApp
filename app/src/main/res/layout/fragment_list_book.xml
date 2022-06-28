@@ -5,6 +5,7 @@
     android:id="@+id/list_book_layout_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F8FF"
     tools:context=".ui.ListBookFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -21,7 +22,7 @@
         android:background="#673AB7"
         android:clickable="true"
         android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="#595454"
+        app:backgroundTint="#DCDCDC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
